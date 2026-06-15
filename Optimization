@@ -1,0 +1,24 @@
+public class Optimization
+{
+    public static void main(String[] args) {
+        // Step 1: Create an array of 1,000,000 integers
+        int[] numbers = new int[1000000];
+        long sum = 0;
+
+        // Step 2: Initialize the array with values from 0 to 999,999
+        for (int i = 0; i < 1000000; i++) {
+            numbers[i] = i;
+        }
+
+        // Step 3: Calculate the sum of all elements
+        for (int i = 0; i < 1000000; i++) {
+            sum += numbers[i];
+        }
+
+        // Step 4: Increment the sum by 1
+        sum++;
+
+        // Step 5: Print the result
+        System.out.println("Sum of array elements + 1: " + sum);
+    }
+}
